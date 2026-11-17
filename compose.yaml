@@ -1,0 +1,11 @@
+services:
+  hotel-app:
+    build: .
+    container_name: hotel_management_app
+    stdin_open: true
+    tty: true
+    volumes:
+      - hotel_data:/app/data
+
+volumes:
+  hotel_data:
